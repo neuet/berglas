@@ -4,7 +4,7 @@ This guide assumes you have followed the [setup instructions][setup] in the
 README. Specifically, it is assumed that you have created a project, Cloud
 Storage bucket, and Cloud KMS key.
 
-[setup]: https://github.com/GoogleCloudPlatform/berglas#setup
+[setup]: https://github.com/neuet/berglas#setup
 
 1. Make sure you are in the `examples/appengineflex/ruby` folder before
 continuing!

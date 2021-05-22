@@ -4,7 +4,7 @@ This guide assumes you have followed the [setup instructions][setup] in the
 README. Specifically, it is assumed that you have created a project, Cloud
 Storage bucket, and Cloud KMS key.
 
-[setup]: https://github.com/GoogleCloudPlatform/berglas#setup
+[setup]: https://github.com/neuet/berglas#setup
 
 At present, Cloud Build does not have a way to share environment variables
 across processes. All Berglas references must resolve to the filesystem and use
