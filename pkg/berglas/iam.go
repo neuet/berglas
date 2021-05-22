@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"cloud.google.com/go/iam"
-	"github.com/GoogleCloudPlatform/berglas/pkg/retry"
+	"github.com/neuet/berglas/pkg/retry"
 	"github.com/pkg/errors"
 	"google.golang.org/api/googleapi"
 	storagev1 "google.golang.org/api/storage/v1"

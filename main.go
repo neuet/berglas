@@ -27,7 +27,7 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/GoogleCloudPlatform/berglas/pkg/berglas"
+	"github.com/neuet/berglas/pkg/berglas"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 )
@@ -605,7 +605,7 @@ func editRun(_ *cobra.Command, args []string) error {
 	}
 	if err := cmd.Wait(); err != nil {
 		if terr, ok := err.(*exec.ExitError); ok && terr.ProcessState != nil {
-			code := terr.ProcessState.ExitCode()
+			code := getExitStatus(terr.ProcessState)
 			return exitWithCode(code, errors.Wrap(terr, "editor did not exit 0"))
 		}
 		err = errors.Wrap(err, "unknown failure in running editor")
@@ -742,7 +742,7 @@ func execRun(_ *cobra.Command, args []string) error {
 	if err := cmd.Wait(); err != nil {
 		close(doneCh)
 		if terr, ok := err.(*exec.ExitError); ok && terr.ProcessState != nil {
-			code := terr.ProcessState.ExitCode()
+			code := getExitStatus(terr.ProcessState)
 			return exitWithCode(code, errors.Wrap(terr, "process exited non-zero"))
 		}
 		return misuseError(err)

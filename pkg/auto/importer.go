@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/GoogleCloudPlatform/berglas/pkg/berglas"
-	"github.com/GoogleCloudPlatform/berglas/pkg/retry"
+	"github.com/neuet/berglas/pkg/berglas"
+	"github.com/neuet/berglas/pkg/retry"
 	"github.com/pkg/errors"
 	"google.golang.org/api/googleapi"
 )

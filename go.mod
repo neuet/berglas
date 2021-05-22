@@ -1,6 +1,4 @@
-module github.com/GoogleCloudPlatform/berglas
-
-go 1.12
+module github.com/neuet/berglas
 
 require (
 	cloud.google.com/go v0.47.0
