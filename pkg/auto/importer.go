@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/GoogleCloudPlatform/berglas/pkg/berglas"
+	"github.com/neuet/berglas/pkg/berglas"
 	"github.com/sirupsen/logrus"
 )
 

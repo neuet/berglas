@@ -39,7 +39,7 @@ const (
 	// package in logs and other binaries.
 	Name       = "berglas"
 	Version    = "0.4.0"
-	ProjectURL = "https://github.com/GoogleCloudPlatform/berglas"
+	ProjectURL = "https://github.com/neuet/berglas"
 	UserAgent  = Name + "/" + Version + " (+" + ProjectURL + ")"
 )
 
